@@ -1,0 +1,15 @@
+<div (click)="onCloseClick()" class="ui dimmer visible active">
+  <div (click)="$event.stopPropagation()" class="ui modal visible active">
+    <i (click)="onCloseClick()" class="close icon"></i>
+    <div class="header">MODAL!</div>
+    <div class="content">
+      <p>Some content for the modal window should go right here!</p>
+    </div>
+    <div class="actions">
+      <button (click)="onCloseClick()" class="ui button">Evet</button>
+      <button style="color: red" (click)="onCloseClick()" class="ui button">
+        Hayır
+      </button>
+    </div>
+  </div>
+</div>
